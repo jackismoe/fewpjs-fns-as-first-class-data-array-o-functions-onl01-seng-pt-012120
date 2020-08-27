@@ -1,41 +1,41 @@
-const wakeDog =  function(dogName='Byron', dogBreed='poodle') {
-  const wakeUp = `Wake ${dogName} the ${dogBreed}`;
-  console.log(wakeUp);
-  return wakeUp;
+const wakeDog = (dogName, dogBreed) => {
+  let string  = `Wake ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
-const leashDog =  function(dogName='Byron', dogBreed='poodle') {
-  const leashUp = `Leash ${dogName} the ${dogBreed}`;
-  console.log(leashUp);
-  return leashUp;
+const leashDog = (dogName, dogBreed) => {
+  let string = `Leash ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
-const walkToPark =  function(dogName='Byron', dogBreed='poodle') {
-  const walk = `Walk to the park with ${dogName} the ${dogBreed}`;
-  console.log(walk);
-  return walk;
+const walkToPark = (dogName, dogBreed) => {
+  let string = `Walk to the park with ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
-const throwFrisbee =  function(dogName='Byron', dogBreed='poodle') {
-  const throwIt = `Throw the frisbee for ${dogName} the ${dogBreed}`;
-  console.log(throwIt);
-  return throwIt;
+const throwFrisbee = (dogName, dogBreed) => {
+  let string = `Throw the frisbee for ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
-const walkHome =  function(dogName='Byron', dogBreed='poodle') {
-  const walk = `Walk home with ${dogName} the ${dogBreed}`;
-  console.log(walk);
-  return walk;
+const walkHome = (dogName, dogBreed) => {
+  let string = `Walk home with ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
-const unleashDog =  function(dogName='Byron', dogBreed='poodle') {
-  const unleash = `Unleash ${dogName} the ${dogBreed}`;
-  console.log(unleash);
-  return unleash;
+const unleashDog = (dogName, dogBreed) => {
+  let string = `Unleash ${dogName} the ${dogBreed}`
+  console.log(string)
+  return string
 }
 
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
-function exerciseDog(dog, breed) {
+const exerciseDog = (dog, breed) => {
   return routine.map(fn => fn(dog, breed))
 }
